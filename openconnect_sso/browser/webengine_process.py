@@ -195,7 +195,6 @@ autoFill();
         self._on_update(Url(url))
     def _on_select_client_certificate(self, selection):
         logger.info("Select first client Certificate")
-        url = self.page().url().toString()
         certificate = selection.certificates()[0]
         text = ('<b>Subject:</b> {subj}<br/>'
                 '<b>Issuer:</b> {issuer}<br/>'
